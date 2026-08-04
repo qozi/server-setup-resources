@@ -1,11 +1,12 @@
 version: v1.0.0
 installer:
   path: installers/v1.0.0/server-setup.run
-  sha256: 2910521d5e898ca61da9b4b259295b0c7aa63034f468261d7cb382cc0dc4b45d
+  sha256: 9a863a291b5c71837ca7becf3f77edba8baf5e6e25d813751919ac9a40bac977
 templates:
   path: templates/v1.0.0
   manifest: manifest.sha256
   archives:
+    - certimate.tar.gz
     - mysql57.tar.gz
     - mysql8.tar.gz
     - nginx.tar.gz
