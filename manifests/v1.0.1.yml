@@ -1,0 +1,12 @@
+version: v1.0.1
+installer:
+  path: installers/v1.0.1/server-setup.run
+  sha256: 7a838f02b6bb334c892bd82dfadcf34efe34d79f975b1986e16da53aba6b16fb
+templates:
+  path: templates/v1.0.1
+  manifest: manifest.sha256
+  archives:
+    - mysql57.tar.gz
+    - mysql8.tar.gz
+    - nginx.tar.gz
+    - redis6.tar.gz
