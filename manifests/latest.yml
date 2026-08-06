@@ -2,7 +2,7 @@ version: latest
 published_at: "20260806"
 installer:
   path: installers/latest/server-setup.run
-  sha256: 6edaa90fb4a5b9161968923e9aad7fe8d69b597f94851f40269ad63751746cd1
+  sha256: e78b189e35e68898ae45d27062cc843424a8da2f080fb96a74ca7ad493a3d46e
 templates:
   path: templates/latest
   manifest: manifest.sha256
