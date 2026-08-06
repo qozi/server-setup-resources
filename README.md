@@ -2,7 +2,7 @@
 
 `server-setup` 的公开发布资源仓库。此仓库只保存由主代码仓库构建的版本化执行器、Docker Compose 模板包和校验清单，不在此处维护源代码或模板源文件。
 
-主代码仓库：<https://github.com/qozi/sever-setup>
+主代码仓库：<https://github.com/qozi/server-setup>
 
 ## 目录结构
 
@@ -32,20 +32,27 @@ manifests/
 
 ### 聚合安装
 
-一行命令下载、校验并启动执行器：
+一行命令下载、校验并启动执行器（推荐进程替换，stdin 保留终端以支持交互式菜单）：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qozi/server-setup-resources/main/bootstrap.sh | bash
+bash <(curl -fsSL https://raw.githubusercontent.com/qozi/server-setup-resources/main/bootstrap.sh)
 ```
 
 指定版本或透传参数给执行器：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qozi/server-setup-resources/main/bootstrap.sh \
-  | bash -s -- --version v1.0.0 other-software
+bash <(curl -fsSL https://raw.githubusercontent.com/qozi/server-setup-resources/main/bootstrap.sh) \
+  -- --version v1.0.0 other-software
 ```
 
-`bootstrap.sh` 会下载指定版本（默认 `v1.0.0`）的执行器与 SHA-256 校验值，校验通过后赋权并执行，其余参数透传给 `server-setup.run`。`curl|bash` 模式下会自动重新指向 `/dev/tty` 以支持执行器内的交互式菜单。
+若进程替换不可用，也可先下载到文件再执行：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/qozi/server-setup-resources/main/bootstrap.sh \
+  -o /tmp/server-setup-bootstrap.sh && bash /tmp/server-setup-bootstrap.sh
+```
+
+`bootstrap.sh` 会下载指定版本（默认 `v1.0.0`）的执行器与 SHA-256 校验值，校验通过后赋权并执行，其余参数透传给 `server-setup.run`。推荐使用 `bash <(curl ...)` 形式：脚本通过独立文件描述符读取，stdin 保留为终端，交互式菜单可正常工作。
 
 ### 手动下载与校验
 
