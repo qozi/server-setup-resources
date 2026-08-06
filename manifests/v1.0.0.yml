@@ -1,13 +1,15 @@
 version: v1.0.0
 installer:
   path: installers/v1.0.0/server-setup.run
-  sha256: 9a863a291b5c71837ca7becf3f77edba8baf5e6e25d813751919ac9a40bac977
+  sha256: fef6a88d83dbd1acc43413193bc3beb797ced42d2ff784d0f4348a56cc800d39
 templates:
   path: templates/v1.0.0
   manifest: manifest.sha256
   archives:
     - certimate.tar.gz
+    - domain-admin.tar.gz
     - mysql57.tar.gz
     - mysql8.tar.gz
     - nginx.tar.gz
+    - pgsql.tar.gz
     - redis6.tar.gz
