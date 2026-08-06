@@ -8,18 +8,18 @@
 # 用法（推荐进程替换，stdin 保留终端以支持交互式菜单）：
 #   bash <(curl -fsSL https://raw.githubusercontent.com/qozi/server-setup-resources/main/bootstrap.sh)
 #   bash <(curl -fsSL https://raw.githubusercontent.com/qozi/server-setup-resources/main/bootstrap.sh) \
-#     -- --version v1.0.0 other-software
+#     -- -- other-software
 #
 # 选项：
-#   --version v主.次.修订   指定执行器版本，默认 v1.0.0
-#   --                     此后的参数全部透传给 server-setup.run
+#   --version 版本   指定执行器版本，默认 latest
+#   --               此后的参数全部透传给 server-setup.run
 #
-# 维护说明：发布新的默认版本后，需更新下方 VERSION 默认值。
+# 维护说明：latest 版本每次发布自动覆盖，无需更新此文件。
 
 set -euo pipefail
 
 REPO_BASE="https://raw.githubusercontent.com/qozi/server-setup-resources/main"
-VERSION="v1.0.0"
+VERSION="latest"
 PASS_ARGS=()
 
 while [[ $# -gt 0 ]]; do
