@@ -1,7 +1,7 @@
 version: v1.0.0
 installer:
   path: installers/v1.0.0/server-setup.run
-  sha256: b88311415f8e4074fe7e8c4f38793b898e1d577d192c2b37717ba85b7d6eee43
+  sha256: 50399039f3d1b30ede4f4a0b7da84f89bdb8e62e239fd4fdd36f787a27148293
 templates:
   path: templates/v1.0.0
   manifest: manifest.sha256
