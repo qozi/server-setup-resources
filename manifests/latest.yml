@@ -1,23 +1,27 @@
 version: latest
-published_at: "20260807"
+published_at: "20260809"
 installer:
   path: installers/latest/server-setup.run
-  sha256: f0bb8613ecefc8fd152e304766b05ee5873f6f883ca18eae63c15937144a7a94
+  sha256: 2c5622228eb8047bfde77398c4f7885591f4096ca283c0324d7d9a8dcc3033f6
 templates:
   path: templates/latest
   manifest: manifest.sha256
   archives:
+    - aether.tar.gz
     - any-auto-register.tar.gz
     - axonhub.tar.gz
     - certimate.tar.gz
     - cliproxyapi.tar.gz
+    - cpa-manager-plus.tar.gz
     - domain-admin.tar.gz
     - metapi.tar.gz
     - mysql57.tar.gz
     - mysql8.tar.gz
+    - new-api.tar.gz
     - nginx.tar.gz
     - octopus.tar.gz
     - octopus-plus.tar.gz
     - pgsql.tar.gz
     - redis6.tar.gz
     - resin.tar.gz
+    - sub2api.tar.gz
