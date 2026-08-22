@@ -1,8 +1,8 @@
 version: latest
-published_at: "20260821"
+published_at: "20260822"
 installer:
   path: installers/latest/server-setup.run
-  sha256: a569b0602b3efa87968bbc5ed6193db1dc8af684325f2125354091ac2b45f918
+  sha256: 8cb1af64fb7969c292e9edff3931b7df1d6271538645ed107f9c45efc41e04d5
 templates:
   path: templates/latest
   manifest: manifest.sha256
@@ -22,7 +22,7 @@ templates:
     - nginx.tar.gz
     - octopus.tar.gz
     - octopus-plus.tar.gz
-    - pgsql.tar.gz
+    - postgres.tar.gz
     - redis6.tar.gz
     - resin.tar.gz
     - sub2api.tar.gz
