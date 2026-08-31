@@ -1,8 +1,8 @@
 version: latest
-published_at: "20260828"
+published_at: "20260831"
 installer:
   path: installers/latest/server-setup.run
-  sha256: dede84b09bd735b5506b74dd695f8f860e438b1856d9f51a6a42ca20ac0a278d
+  sha256: ac2921fd5c631e3145eeca76468ca71dc0d630a3edc9b3b2c40e82cb32621885
 templates:
   path: templates/latest
   manifest: manifest.sha256
@@ -26,3 +26,4 @@ templates:
     - redis8.tar.gz
     - resin.tar.gz
     - sub2api.tar.gz
+    - sublinkpro.tar.gz
