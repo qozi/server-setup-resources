@@ -1,8 +1,8 @@
 version: latest
-published_at: "20260920"
+published_at: "20260928"
 installer:
   path: installers/latest/server-setup.run
-  sha256: db954e1c41c0e2fa9d3a8f012ae68612ce122b0ddbad080cb76088321749a1fd
+  sha256: 140612ffbd00ef4f73596fa5d00c0d82725bc98bc2338ebfdc86f169d7d84181
 templates:
   path: templates/latest
   manifest: manifest.sha256
@@ -15,6 +15,7 @@ templates:
     - clearcote-browser.tar.gz
     - cliproxyapi.tar.gz
     - cpa-manager-plus.tar.gz
+    - dbx.tar.gz
     - domain-admin.tar.gz
     - firecrawl.tar.gz
     - metapi.tar.gz
