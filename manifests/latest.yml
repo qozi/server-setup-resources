@@ -1,13 +1,14 @@
 version: latest
-published_at: "20261022"
+published_at: "20261023"
 installer:
   path: installers/latest/server-setup.run
-  sha256: 630850a1622482dd69833bd6ed7bb5726ef6e10236e9d9be5d310907d3ee9cac
+  sha256: 44b83b25f925dbb9fe8320c3ce798fc49ea18b41181d0279290a9c6bf28d8983
 templates:
   path: templates/latest
   manifest: manifest.sha256
   archives:
     - aether.tar.gz
+    - agent2api.tar.gz
     - alist.tar.gz
     - any-auto-register.tar.gz
     - axonhub.tar.gz
@@ -36,3 +37,4 @@ templates:
     - resin.tar.gz
     - sub2api.tar.gz
     - sublinkpro.tar.gz
+    - vaultfleet.tar.gz
